@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name= "colorTeknizer">#C7566D</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorTransparency">#2e3d41</color>
+
 </resources>

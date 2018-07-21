@@ -13,13 +13,13 @@
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         android:visibility="visible"
-        tools:context="com.ramaqq.teknizer.MainActivity"
-        tools:openDrawer="start">
+        tools:context="com.ramaqq.teknizer.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"        >
+        android:orientation="vertical"
+        android:id="@+id/linierLay1">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -29,11 +29,11 @@
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
         <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+        </FrameLayout>
 
     </LinearLayout>
 
@@ -45,5 +45,19 @@
             app:headerLayout="@layout/nav_header"
             app:menu="@menu/drawer_menu" />
 
-    </android.support.v4.widget.DrawerLayout>
+        </android.support.v4.widget.DrawerLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_nav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:menu="@menu/nav_buttom_items"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </android.support.design.widget.BottomNavigationView>
+
 </RelativeLayout>
