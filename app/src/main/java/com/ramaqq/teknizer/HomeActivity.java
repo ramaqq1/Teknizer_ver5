@@ -15,7 +15,7 @@ import android.view.MenuItem;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
-33 3  33  3/**
+/**
  * Created by ramaqq on 7/17/2018.
  */
 
@@ -39,14 +39,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         drawer = findViewById(R.id.drawer_layout);
         mMainView = findViewById(R.id.main_nav);
-        mframeLayout = (FrameLayout) findViewById(R.id. 4 4 45 55VC  EQ3R23);
+        mframeLayout = (FrameLayout) findViewById(R.id.fragment_container);
 
         mMainView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.btnav_home:
-                        getSupportFragmentManager().beginTransaction().replace(R.id. 2 41,
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                                 new FragmentHome()).commit();
                         return true;
                     case R.id.btnav_points:
@@ -71,13 +71,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         //get menu item drawer and add animation drawer
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
-                R.string.navigation_drawer_open, R.string.navigation_drawer_close);  55vc  eq3r23
+                R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         //Menu home akan langsung tampil tanpa mengklik menu home pada awal masuk app
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction() 2 41     ment_container,
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new FragmentHome()).commit();
             mMainView.setSelectedItemId(R.id.btnav_home);
         }
