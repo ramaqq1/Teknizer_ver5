@@ -1,15 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="This ii change password layout"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:text="Change Password"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <!--<ImageView-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:src="@drawable/ic_back"-->
+                <!--android:layout_centerVertical="true"/>-->
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <TextView
+            android:id="@+id/tvChangePass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Current Password"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etChangePass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvChangePass"
+            android:layout_marginTop="11dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tvNewPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etChangePass"
+            android:layout_marginTop="22dp"
+            android:text="New Password"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNewPass"
+            android:layout_marginTop="11dp"
+            android:hint="Password contains at least 6 character"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etNewPass"
+            android:layout_marginTop="22dp"
+            android:text="Verify Password"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvVerify"
+            android:layout_marginTop="11dp"
+            android:hint="Retype your new password"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_below="@id/etVerify"
+            android:layout_marginTop="57dp"
+            android:background="@drawable/buttonstyle2"
+            android:onClick="confirmInput"
+            android:text="Change Password"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
 
 </RelativeLayout>

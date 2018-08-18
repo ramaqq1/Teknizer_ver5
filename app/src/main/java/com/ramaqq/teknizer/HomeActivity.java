@@ -1,5 +1,6 @@
 package com.ramaqq.teknizer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -103,8 +104,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                         new Fragment_settingActivity()).commit();
                 break;
             case R.id.nav_key:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new Fragment_changePassActivity()).commit();
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+//                        new Fragment_changePassActivity()).commit();
+                Intent intent = new Intent(HomeActivity.this, Fragment_changePassActivity.class);
+                startActivity(intent);
                 break;
             case R.id.nav_logout:
                 Toast.makeText(this, "LogOut", Toast.LENGTH_SHORT).show();

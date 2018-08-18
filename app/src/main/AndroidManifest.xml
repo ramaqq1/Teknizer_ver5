@@ -18,6 +18,14 @@
         </activity>
         <activity android:name=".HomeActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".PointActive_Activity"></activity>
+        <activity android:name=".PointHold_Activity"></activity>
+        <activity android:name=".PointBonus_Activity"></activity>
+        <activity android:name=".PointCut_Activity"></activity>
+        <activity android:name=".PointExpired_Activity"></activity>
+        <activity android:name=".MyPSB_Activity"></activity>
+        <activity android:name=".Fragment_changePassActivity"></activity>
+
     </application>
 
 </manifest>
