@@ -28,6 +28,7 @@
         <activity android:name=".DetailPoint_cut"></activity>
         <activity android:name=".Gangguan_Activity"></activity>
         <activity android:name=".DetailGangguan"></activity>
+        <activity android:name=".DetailPoints_expired"></activity>
 
     </application>
 

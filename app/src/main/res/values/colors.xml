@@ -4,9 +4,11 @@
     <color name="colorPrimaryDark">#38144B</color>
     <color name="colorAccent">#842D8F</color>
     <color name="red">#ae1111</color>
+    <color name="textPoints">#658397</color>
     <color name= "colorTeknizer">#C7566D</color>
     <color name="lightGrayLine">#ededed</color>
     <color name="materialYellow">#ffb300</color>
+    <color name="yellowPoints">#EB9F5C</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorTransparency">#2e3d41</color>
     <color name="textcolor">#000000</color>

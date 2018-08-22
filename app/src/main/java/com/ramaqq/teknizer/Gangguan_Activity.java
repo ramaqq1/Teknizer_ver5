@@ -49,10 +49,7 @@ public class Gangguan_Activity extends AppCompatActivity {
             }
         });
 
-
-
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
