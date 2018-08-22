@@ -1,11 +1,18 @@
 package com.ramaqq.teknizer;
 
-public class Data_Pointcut {
+import java.io.Serializable;
+
+public class Data_Pointcut implements Serializable{
     private String idPoint_cut;
     private String actual_solution;
     private String date;
     private String pointMin;
     private String constumer;
+    //gunakan data untuk pada detail Point cut page
+    private String subSegmentattion;
+    private String number;
+    private String segmentation;
+    private String product;
 
     public Data_Pointcut(String idPoint_cut, String actual_solution, String pointMin, String date, String constumer) {
         this.idPoint_cut = idPoint_cut;

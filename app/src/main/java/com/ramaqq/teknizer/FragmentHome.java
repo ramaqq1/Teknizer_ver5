@@ -17,7 +17,7 @@ import android.view.ViewGroup;
  */
 public class FragmentHome extends Fragment {
     private static final String TAG = "FragmentHome";
-        private CardView mcv_pointAktif, mcv_pointHold, mcv_pointBonus, mcv_gangguan, mcv_pointExpired, mcv_myPSB;
+        private CardView mcv_pointAktif, mcv_pointHold, mcv_pointBonus, mcv_pointCut, mcv_pointExpired, mcv_myPSB, gangguna;
 
 
     @Override
@@ -40,9 +40,19 @@ public class FragmentHome extends Fragment {
         mcv_pointAktif = view.findViewById(R.id.cv_pointAktif);
         mcv_pointHold = view.findViewById(R.id.cv_pointHold);
         mcv_pointBonus = view.findViewById(R.id.cv_pointBonus);
-        mcv_gangguan = view.findViewById(R.id.cv_gangguang);
+        mcv_pointCut = view.findViewById(R.id.cv_gangguang);
         mcv_pointExpired = view.findViewById(R.id.cv_pointExpired);
         mcv_myPSB = view.findViewById(R.id.cv_myPSB);
+        gangguna = view.findViewById(R.id.cv_gangguan2);
+
+        gangguna.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d(TAG, "onClick: masuk ke gangguan page");
+                Intent intent = new Intent(FragmentHome.this.getActivity(), Gangguan_Activity.class);
+                startActivity(intent);
+            }
+        });
 
         mcv_pointAktif.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +79,7 @@ public class FragmentHome extends Fragment {
                 startActivity(intent);
             }
         });
-        mcv_gangguan.setOnClickListener(new View.OnClickListener() {
+        mcv_pointCut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: masuk ke page point cut");

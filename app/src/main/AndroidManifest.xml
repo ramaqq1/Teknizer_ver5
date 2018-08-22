@@ -25,6 +25,9 @@
         <activity android:name=".PointExpired_Activity"></activity>
         <activity android:name=".MyPSB_Activity"></activity>
         <activity android:name=".Fragment_changePassActivity"></activity>
+        <activity android:name=".DetailPoint_cut"></activity>
+        <activity android:name=".Gangguan_Activity"></activity>
+        <activity android:name=".DetailGangguan"></activity>
 
     </application>
 

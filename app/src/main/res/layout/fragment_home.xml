@@ -1,11 +1,16 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.ramaqq.teknizer.FragmentHome"
-    android:orientation="vertical"
-    android:padding="16dp">
+    tools:context="com.ramaqq.teknizer.FragmentHome">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -102,7 +107,6 @@
     //cardview layout
     <LinearLayout
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/lay0"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:orientation="horizontal"
@@ -205,7 +209,7 @@
                 android:layout_marginTop="6dp"/>
         </LinearLayout>
 
-        //cardview
+
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="match_parent"
@@ -257,9 +261,9 @@
 
     </LinearLayout>
 
+    //cardview layout
     <LinearLayout
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/lay0"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:orientation="horizontal"
@@ -308,7 +312,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Gangguan"
+                android:text="Point Cut"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:layout_marginTop="6dp"/>
@@ -414,6 +418,68 @@
 
     </LinearLayout>
 
+    //cardview layout
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:clipToPadding="false">
 
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_gangguan2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="6dp"
+                app:cardCornerRadius="8dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/cardstyle">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_point_aktif"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:text="100"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Gangguan"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
+
+
+
+
+</ScrollView>
