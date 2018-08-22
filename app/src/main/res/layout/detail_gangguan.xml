@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Detail Gangguan"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Trouble Ticket"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDtl_idGangguan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="IN30482456"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="53dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Trouble Open Time"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_dateGangguan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="2018 - 04 - 27"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Constumer"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_constumer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="Suprianto"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Product"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="INET"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Trouble Number"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_troubleNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="Trouble ke 1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="ND Reference"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_NDreference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="Loream ipsum"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Kondisi"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_kondisi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="Butuh diganti"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Segmentation"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_segmentation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="Perangkat Pelanggan"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Sub Segmentation"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_subSegmentation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="Perangkat Pelanggan"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Actual Solution"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_actSolution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="INDIHOME - Drop Core - Sambung / ganti drop core"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Lokasi"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="Balikapapan, Sultan Hj Hasanudin, Kelurahan Lamaru, Teritip"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Desc. Category Symptomp"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_Desc_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="loream ipsum"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
