@@ -29,6 +29,7 @@
         <activity android:name=".Gangguan_Activity"></activity>
         <activity android:name=".DetailGangguan"></activity>
         <activity android:name=".DetailPoints_expired"></activity>
+        <activity android:name=".DetailPoint_hold"></activity>
 
     </application>
 
