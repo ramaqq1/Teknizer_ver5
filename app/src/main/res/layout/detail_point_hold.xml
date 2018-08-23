@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Detail Point Hold"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+<!-- heading layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="! Point akan terkonvert setelah satu bulan"
+                android:textColor="@color/textDisplay"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="126dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/yellowPoints"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDtl_pointsHold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="100 points"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolor"
+                    android:text="PSB Order Id : "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDtl_idPointHold"
+                    android:textSize="14sp"
+                    android:textColor="@color/textcolor"
+                    android:text="9373452"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <View
+                android:layout_marginTop="25dp"
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/lightGrayLine" />
+
+<!--content page-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="PSB Date"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_datePSB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="2018 - 04 - 27"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Type Transaction"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_typeTrans"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="AOI | Bundling"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Services"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="3P"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Phone"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="0853xxxxxxxx"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Internet"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_internet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="16162720xxxx"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Constumer"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_constumer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="Sunardi"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Contact"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="0853xxxxxxxx"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="Address"
+                    android:textColor="@color/textcolor"/>
+                <TextView
+                    android:id="@+id/tvDtl_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:textColor="@color/textcolor"
+                    android:textSize="14sp"
+                    android:text="Kab Balikpapan Keluran Lamaru Rt 30 No A15"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
