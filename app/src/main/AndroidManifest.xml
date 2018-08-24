@@ -30,6 +30,7 @@
         <activity android:name=".DetailGangguan"></activity>
         <activity android:name=".DetailPoints_expired"></activity>
         <activity android:name=".DetailPoint_hold"></activity>
+        <activity android:name=".DetailPoint_bonus"></activity>
 
     </application>
 

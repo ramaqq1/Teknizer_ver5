@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="33.3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/textcolor"
+                android:text="Points Bonus"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvId_pointBonus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="ZTE34824216"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text=" - "
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvConstumer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Loream ipsum"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textSize="13sp"
+                    android:text="Exp. "/>
+
+                <TextView
+                    android:id="@+id/tvDate_bonusExp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="23 Agustus 2018"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:paddingRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="66.6">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@+id/tvPoints"
+                android:src="@drawable/ic_positive_tropy" />
+
+            <TextView
+                android:id="@+id/tvPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:text="100 points"
+                android:textColor="@color/textPoints"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvDatePSB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tvPoints"
+                android:layout_marginTop="12dp"
+                android:text="14 Juli 2018"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginRight="16dp"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="13dp"
+        android:background="@color/lightGrayLine" />
+
+</LinearLayout>
